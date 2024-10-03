@@ -1,0 +1,190 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.sidebar {
+    background-color: #f0f8ff;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar h1 {
+    font-size: 30px;
+    color: #1b1e21;
+    margin: 20px 10px 10px 10px;
+}
+
+.sidebar h2 { 
+    font-size: 26px;
+}
+
+
+}
+
+.sidebar p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.download-buttons {
+    margin-top: 20px;
+}
+
+.download-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #0073b7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.main-content {
+    padding: 20px;
+    flex: 1;
+}
+
+    .main-content h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .main-content h3 {
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+.education, .experience ul {
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+    .education li {
+        margin-bottom: 10px;
+    }
+
+.experience ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+
+#JaiPP {
+    border-radius: 50%;
+    height: 150px;
+}
