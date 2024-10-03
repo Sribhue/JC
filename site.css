@@ -188,3 +188,8 @@ body {
     border-radius: 50%;
     height: 150px;
 }
+#pdf-canvas {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
