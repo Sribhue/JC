@@ -51,7 +51,51 @@
 
         <!-- Main Content (Right) -->
         <div class="main-content">    
-            <H2> PDFs go here </H2>
+            <h2>PDF 1</h2>
+    <div id="pdf-viewer-1"></div>
+
+    <h2>PDF 2</h2>
+    <div id="pdf-viewer-2"></div>
+
+    <h2>PDF 3</h2>
+    <div id="pdf-viewer-3"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script>
+        // Function to render a PDF file in a specified div
+        function renderPDF(url, canvasContainerId) {
+            // Load the PDF
+            pdfjsLib.getDocument(url).promise.then(function(pdf) {
+                // Get the first page
+                pdf.getPage(1).then(function(page) {
+                    var scale = 1.5;
+                    var viewport = page.getViewport({ scale: scale });
+
+                    // Prepare canvas using PDF page dimensions
+                    var canvas = document.createElement("canvas");
+                    var context = canvas.getContext("2d");
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+
+                    // Append the canvas to the specified div
+                    var container = document.getElementById(canvasContainerId);
+                    container.appendChild(canvas);
+
+                    // Render PDF page into canvas context
+                    var renderContext = {
+                        canvasContext: context,
+                        viewport: viewport
+                    };
+                    page.render(renderContext);
+                });
+            });
+        }
+
+        // Render PDFs in their respective divs
+        renderPDF('path/to/your/pdf1.pdf', 'pdf-viewer-1');
+        renderPDF('path/to/your/pdf2.pdf', 'pdf-viewer-2');
+        renderPDF('path/to/your/pdf3.pdf', 'pdf-viewer-3');
+    </script>
             </div>
         </div>
     </div>
