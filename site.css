@@ -193,3 +193,12 @@ body {
     width: 100%;
     height: auto;
 }
+ #pdf-viewer {
+            border: 1px solid black;
+            width: 600px;
+            height: 800px;
+            overflow: auto;
+        }
+        canvas {
+            width: 100%;
+        }
